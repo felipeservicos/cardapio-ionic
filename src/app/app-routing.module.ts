@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'meus-dados',
+    loadChildren: () => import('./meus-dados/meus-dados.module').then( m => m.MeusDadosPageModule)
+  },
+  {
+    path: 'bemvindo',
+    loadChildren: () => import('./bemvindo/bemvindo.module').then( m => m.BemvindoPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'pagina-com-badge',
+    loadChildren: () => import('./pagina-com-badge/pagina-com-badge.module').then( m => m.PaginaComBadgePageModule)
+  }
 ];
 
 @NgModule({

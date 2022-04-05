@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+			<ion-menu-button autoHide="false"></ion-menu-button>
+		</ion-buttons>
+    <ion-title>
+      Meus Dados
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button color="success" (click)="mostrarAlert()">Informe seus dados</ion-button>
+  <p>{{texto}}</p>
+
+
+  <ion-text color="danger" *ngIf=" email && telefone" >
+    <center><h3 >Email: {{email}}</h3></center>
+    <center><h3 >Telefone: {{telefone}}</h3></center>
+  </ion-text>
+</ion-content>
