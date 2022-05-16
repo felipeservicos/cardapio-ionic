@@ -18,7 +18,11 @@ pages: Array<{title: string, url: string, icon: string}>;
       { title: "Home", url: "home", icon: 'home' },
       { title: "Login", url: "login", icon: 'card'  },
       { title: "Meus Dados",url: "meus-dados", icon: 'list' },
-      { title: "Pagina Com Badge",url: "pagina-com-badge", icon: 'list' }
+      { title: "Pagina Com Badge",url: "pagina-com-badge", icon: 'list' },
+      { title: "Bebidas",url: "bebidas", icon: 'list' },
+      { title: "Lanches",url: "lanches", icon: 'list' },
+      { title: "Pratos de Entrada e Refeições",url: "pratos", icon: 'list' },
+      { title: "Sobremesas",url: "sobremesas", icon: 'list' },
       
 
       
