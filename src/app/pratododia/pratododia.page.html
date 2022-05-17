@@ -1,9 +1,26 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>pratododia</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+			<ion-menu-button autoHide="false"></ion-menu-button>
+		</ion-buttons>
+    <ion-title>
+      Prato do Dia
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <img src="./assets/pratos.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Nosso prato feito com carinho do dia</ion-card-subtitle>
+      <ion-card-title>{{pratododia[1].nome}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Combinando com o prato principal, como bebida {{pratododia[0].nome}} temos de sobremesa {{pratododia[2].nome}}! Com 20% de desconto nos itens por somente R$ {{totalcomdesconto}}
+    </ion-card-content>
+  </ion-card>
+  <section class="full-width">
+    <ion-button expand="full" color="secondary" [routerLink]="['/home']">VOLTAR</ion-button>
+  </section>
 </ion-content>
