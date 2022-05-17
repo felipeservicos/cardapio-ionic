@@ -62,6 +62,10 @@ const routes: Routes = [
   {
     path: 'sobremesas',
     loadChildren: () => import('./sobremesas/sobremesas.module').then( m => m.SobremesasPageModule)
+  },
+  {
+    path: 'pratododia',
+    loadChildren: () => import('./pratododia/pratododia.module').then( m => m.PratododiaPageModule)
   }
 ];
 
