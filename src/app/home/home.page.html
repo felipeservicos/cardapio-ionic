@@ -11,23 +11,22 @@
 <ion-content [fullscreen]="true">
 <br>
   <div id="container">
-    <ion-list>
-      <ion-item (click)="mostrarToast($event.target.childNodes[0].data)">
-        <ion-label >Alface</ion-label>
-      </ion-item>
-      <ion-item (click)="mostrarToast($event.target.childNodes[0].data)">
-        <ion-label>Salsa</ion-label>
-      </ion-item>
-      <ion-item (click)="mostrarToast($event.target.childNodes[0].data)">
-        <ion-label>Couve</ion-label>
-      </ion-item>
-      <ion-item (click)="mostrarToast($event.target.childNodes[0].data)">
-        <ion-label>Agrião</ion-label>
-      </ion-item>
-      <ion-item (click)="mostrarToast($event.target.childNodes[0].data)">
-        <ion-label>Brócolis</ion-label>
-      </ion-item>
-    </ion-list>
+
+    <section class="full-width">
+           <ion-button expand="full" color="danger">Confira nosso prato do dia!</ion-button>
+    </section>
+
+
+    <ion-card *ngFor="let item of cardapio" [routerLink]="[item.url]" >
+    
+      <img src="./madison.jpg" />
+      <ion-card-header>
+           <ion-card-title>{{item.nome}}</ion-card-title>
+      </ion-card-header>
+
+    </ion-card>
+ 
+    
   </div>
 </ion-content>
 

@@ -12,6 +12,26 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'home/bebidas',
+    redirectTo: 'bebidas',
+    pathMatch: 'full'
+  },
+  {
+  path: 'home/pratos',
+  redirectTo: 'pratos',
+  pathMatch: 'full'
+},
+{
+  path: 'home/sobremesas',
+  redirectTo: 'sobremesas',
+  pathMatch: 'full'
+},
+{
+  path: 'home/lanches',
+  redirectTo: 'lanches',
+  pathMatch: 'full'
+},
+  {
     path: 'meus-dados',
     loadChildren: () => import('./meus-dados/meus-dados.module').then( m => m.MeusDadosPageModule)
   },

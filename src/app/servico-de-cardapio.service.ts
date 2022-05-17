@@ -9,15 +9,15 @@ export class ServicoDeCardapioService {
   pratos: Array<{ id: number, nome: string, descricao: string, img: string, icon: string, preco: number }>;
   sobremesas: Array<{ id: number, nome: string, descricao: string, img: string, icon: string, preco: number }>;
   lanches: Array<{ id: number, nome: string, descricao: string, img: string, icon: string, preco: number }>;
-  categorias: Array<{ id: number, nome: string, img: string }>;
+  categorias: Array<{ id: number, nome: string, img: string, url:string }>;
 
   constructor() {
 
 this.categorias=[
-  { id: 1, nome: 'bebidas', img: '123' },
-  { id: 2, nome: 'pratos', img: '123' },
-  { id: 3, nome: 'sobremesas', img: '123' },
-  { id: 4, nome: 'lanches', img: '123' },
+  { id: 1, nome: 'BEBIDAS', img: '123',url:'bebidas' },
+  { id: 2, nome: 'PRATOS', img: '123',url:'pratos' },
+  { id: 3, nome: 'SOBREMESAS', img: '123',url:'sobremesas' },
+  { id: 4, nome: 'LANCHES', img: '123',url:'lanches' },
 ]
 
     this.bebidas = [
