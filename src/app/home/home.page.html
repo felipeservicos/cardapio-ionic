@@ -18,9 +18,12 @@
 
 
     <ion-card *ngFor="let item of cardapio" [routerLink]="[item.url]" >
-    
-      <img src="./madison.jpg" />
       <ion-card-header>
+      <ion-thumbnail >
+      <img src="{{item.img}}" />
+      </ion-thumbnail>
+
+      
            <ion-card-title>{{item.nome}}</ion-card-title>
       </ion-card-header>
 

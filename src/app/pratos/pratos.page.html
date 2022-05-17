@@ -15,7 +15,7 @@
       <ion-list>
         <ion-item *ngFor="let item of cardapio">
           <ion-avatar slot="start">
-            <img src="./avatar-poe.png" />
+            <img src="{{item.img}}" />
           </ion-avatar>
           <ion-label >
             <h2>{{item.nome}}</h2>
